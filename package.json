@@ -1,0 +1,10 @@
+{
+  "name": "youtube-transcribe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Gasser <gaserkhaled@yahoo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "youtube-po-token-generator": "^0.3.0"
+  }
+}
