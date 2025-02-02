@@ -22,8 +22,12 @@
         "pkg-path": "yarn"
       }
     },
-    "hook": {},
-    "profile": {},
+    "hook": {
+      "on-activate": "  # -> Set variables, create files and directories\n  # -> Perform initialization steps, e.g. create a python venv\n  # -> Useful environment variables:\n  #      - FLOX_ENV_PROJECT=/home/user/example\n  #      - FLOX_ENV=/home/user/example/.flox/run\n  #      - FLOX_ENV_CACHE=/home/user/example/.flox/cache\n  echo \"Activating Flox environment...\"\n"
+    },
+    "profile": {
+      "common": "  eval $(poetry env activate)\n"
+    },
     "options": {
       "systems": [
         "aarch64-darwin",
